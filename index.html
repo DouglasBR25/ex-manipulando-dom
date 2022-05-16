@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="app.addProperty()">
+        <p>
+            <label>Área: </label>
+            <input type="number" name="area"/>
+        </p>
+    <p>
+        <label>Numero</label>
+        <input type="number" name="numero">
+    </p>
+    <p>
+        <label>Bairro</label>
+        <input type="text" id="myText" value="" name="bairro">
+    </p>
+    <p>
+        <label>Cidade</label>
+        <input type="text" id="myText" value="" name="cidade">
+    </p>
+    
+        
+        
+        <button type="submit">Salva</button>
+        <button type="button" onclik="app.cleanForm()">Limpar</button>
+    </form>
+
+    <ul id="properties"></ul>
+
+    <script src="property.js"></script>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
